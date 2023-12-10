@@ -1,65 +1,65 @@
 .add-list {
-    min-width: 272px;
-    color: #fff;
-    height: auto;
-    min-height: 32px;
-    align-items: center;
+  min-width: 272px;
+  // color: #fff;
+  height: auto;
+  min-height: 32px;
+  align-items: center;
+  border-radius: 3px;
+  background-color: hsla(0, 0%, 100%, 0.24);
+  height: rem(40px);
+  padding: rem(4px);
+  transition: background-color 85ms ease-in;
+  margin: 0px 4px;
+
+  &.add-mode {
+    background-color: $bgcColor;
+    height: fit-content;
+
+    &:hover {
+      background-color: $bgcColor;
+    }
+  }
+
+  .text-area-auto.list-input {
+    width: rem(264px);
+    box-shadow: inset 0 0 0 1px #0079bf;
+    max-height: 256px;
+    min-height: 20px;
+    padding: rem(8px) rem(12px);
     border-radius: 3px;
-    background-color: hsla(0, 0%, 100%, 0.24);
-    height: rem(40px);
-    padding: rem(4px);
-    transition: background-color 85ms ease-in;
-    margin: 0px 4px;
+  }
 
-    &.add-mode {
-        background-color: $bgcColor;
-        height: fit-content;
+  .add-list-actions {
+    margin: 2px 0 0;
+  }
 
-        &:hover {
-            background-color: $bgcColor;
-        }
+  .add-list-btn {
+    min-height: 32px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background-color: $blueColor;
+    color: #fff;
+
+    &:hover {
+      background-color: #026aa7;
     }
+  }
 
-    .text-area-auto.list-input {
-        width: rem(264px);
-        box-shadow: inset 0 0 0 1px #0079bf;
-        max-height: 256px;
-        min-height: 20px;
-        padding: rem(8px) rem(12px);
-        border-radius: 3px;
+  .plus {
+    img {
+      width: rem(16px);
+      height: rem(16px);
     }
+  }
 
-    .add-list-actions {
-        margin: 2px 0 0;
-    }
+  .close-add-list-btn {
+    color: #42526e;
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+  }
 
-    .add-list-btn {
-        min-height: 32px;
-        padding-bottom: 4px;
-        padding-top: 4px;
-        background-color: $blueColor;
-        color: #fff;
-
-        &:hover {
-            background-color: #026aa7;
-        }
-    }
-
-    .plus {
-        img {
-            width: rem(16px);
-            height: rem(16px);
-        }
-    }
-
-    .close-add-list-btn {
-        color: #42526e;
-        height: 24px;
-        width: 24px;
-        margin-left: 5px;
-    }
-
-    .add-list-txt {
-        margin-left: 3px;
-    }
+  .add-list-txt {
+    margin-left: 3px;
+  }
 }

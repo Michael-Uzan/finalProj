@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import { HiOutlineTemplate } from "react-icons/hi";
+// import { HiOutlineTemplate } from "react-icons/hi";
 import { MdDeveloperBoard } from "react-icons/md";
 
 export function SideNav({ path }) {
@@ -16,7 +16,8 @@ export function SideNav({ path }) {
           <h3>Boards</h3>
         </div>
       </NavLink>
-      <NavLink to="/templates">
+      {/* Todo: add templates */}
+      {/* <NavLink to="/templates">
         <div
           className={`nav-item flex align-center${
             path === "templates" ? " active" : ""
@@ -25,7 +26,7 @@ export function SideNav({ path }) {
           <HiOutlineTemplate />
           <h3>Templates</h3>
         </div>
-      </NavLink>
+      </NavLink> */}
     </section>
   );
 }
